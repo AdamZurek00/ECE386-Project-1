@@ -22,6 +22,7 @@ int Save_File(char *Filename, long int* Array, int Size){
         count -= -1;
     }
     fclose(outf);
+    free(Array);
     return count;
 }
 
