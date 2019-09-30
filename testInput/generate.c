@@ -6,8 +6,9 @@ int main(){
     srand(63427462131);
     FILE* outf;
     outf = fopen("test4", "w");
-    fprintf(outf, "%d\n",  30);
-    for(int i = 0; i < 30; i++)
+    long int Size = 1000000;
+    fprintf(outf, "%d\n",  Size);
+    for(int i = 0; i < Size; i++)
         fprintf(outf, "%d\n", rand() % 10000);
 
     
